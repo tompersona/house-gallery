@@ -55,5 +55,12 @@
             pagination: false
         });
     </script>
+    <script>
+    document.addEventListener('gesturestart', function (e) {
+        e.preventDefault(); // Prevents default zoom-blocking behavior in some browsers
+        document.body.style.zoom = 1.0; // Ensures zoom is enabled
+    });
+</script>
+
 </body>
 </html>
